@@ -1,7 +1,7 @@
 {
     "name": "aschelch/scenario",
     "type": "library",
-    "description": "",
+    "description": "An automation library similar to IFTTT that you can use in your webapp",
     "keywords": [
         "ifttt",
         "scenario",
