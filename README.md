@@ -15,7 +15,7 @@ to your `composer.json` file:
 ```json
 {
     "require": {
-        "aschelch/scenario": "dev-master"
+        "aschelch/scenario": "1.0.x"
     }
 }
 ```
