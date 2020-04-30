@@ -3,6 +3,9 @@ language: php
 php:
   - 5.4
   - 5.5
+  - 7.2
+  - 7.3
+  - 7.4
   - hhvm
 
 before_script:
