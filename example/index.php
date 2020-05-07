@@ -95,7 +95,7 @@ $processor->process('AdminUserLoggedIn', array(
 
 echo "<h1>NullPointerExecption is thrown</h1>";
 $processor->process('ExceptionThrown', array(
-    'type'  => 'NullPointerExecption',
+    'type'  => 'NullPointerException',
     'message' => 'Null pointer bla bla bla',
     'stacktrace' => array()
 ));
