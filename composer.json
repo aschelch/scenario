@@ -1,5 +1,5 @@
 {
-    "name": "aschelch/scenario",
+    "name": "plume-solution/scenario",
     "version": "1.0.0",
     "type": "library",
     "description": "An automation library similar to IFTTT that you can use in your webapp",
@@ -8,7 +8,7 @@
         "scenario",
         "automation"
     ],
-    "homepage": "https://github.com/aschelch/scenario",
+    "homepage": "https://github.com/PlumeSolution/scenario",
     "license": "MIT",
     "authors": [
         {
@@ -17,7 +17,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "Aschelch\\Scenario\\" : "src/" }
+        "psr-4": { "PlumeSolution\\Scenario\\" : "src/" }
     },
     "require":
     {

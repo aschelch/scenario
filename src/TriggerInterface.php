@@ -1,6 +1,6 @@
 <?php
 
-namespace Aschelch\Scenario;
+namespace PlumeSolution\Scenario;
 
 interface TriggerInterface
 {
