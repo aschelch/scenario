@@ -4,13 +4,23 @@ namespace Aschelch\Scenario\Tests;
 
 use Aschelch\Scenario\Processor;
 use Aschelch\Scenario\Scenario;
+use \Mockery;
+use PHPUnit\Framework\TestCase;
+use Aschelch\Scenario\ScenarioRepositoryInterface;
 
-class ProcessorTest extends \PHPUnit_Framework_TestCase{
+class ProcessorTest extends TestCase
+{
+    private $repository;
+    /**
+     * @var Processor
+     */
+    private $processor;
 
-    public function setUp(){
+    public function setUp() : void
+    {
         parent::setUp();
 
-        $this->repository = \Mockery::mock('Aschelch\Scenario\ScenarioRepositoryInterface');
+        $this->repository = Mockery::mock(ScenarioRepositoryInterface::class);
         $this->processor = new Processor($this->repository);
     }
 
@@ -22,7 +32,7 @@ class ProcessorTest extends \PHPUnit_Framework_TestCase{
     }
 
     public function testProcessWithAProcessedScenario() {
-        $scenario = \Mockery::mock('Aschelch\Scenario\Scenario');
+        $scenario = \Mockery::mock(Scenario::class);
         $scenario->shouldReceive('isTriggered')->withAnyArgs()->once()->andReturn(true);
         $scenario->shouldReceive('execute')->once()->andReturn(true);
 
@@ -34,7 +44,7 @@ class ProcessorTest extends \PHPUnit_Framework_TestCase{
     }
 
     public function testProcessWithAScenarioThatIsNotTriggered() {
-        $scenario = \Mockery::mock('Aschelch\Scenario\Scenario');
+        $scenario = Mockery::mock(Scenario::class);
         $scenario->shouldReceive('isTriggered')->withAnyArgs()->once()->andReturn(false);
         $scenario->shouldReceive('execute')->never();
 

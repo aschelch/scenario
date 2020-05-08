@@ -2,6 +2,7 @@
 
 require '../vendor/autoload.php';
 
+use Aschelch\Scenario\Scenario;
 use Aschelch\Scenario\ScenarioRepositoryInterface;
 use Aschelch\Scenario\Processor;
 
