@@ -3,14 +3,27 @@
 namespace Aschelch\Scenario\Tests;
 
 use Aschelch\Scenario\Scenario;
+use PHPUnit\Framework\TestCase;
+use Aschelch\Scenario\TriggerInterface;
+use Aschelch\Scenario\ActionInterface;
 
-class ScenarioTest extends \PHPUnit_Framework_TestCase{
+class ScenarioTest extends TestCase
+{
+    /**
+     * @var TriggerInterface
+     */
+    private $trigger;
+    /**
+     * @var ActionInterface
+     */
+    private $action;
 
-    public function setUp(){
+    public function setUp() : void
+    {
         parent::setUp();
 
-        $this->trigger = \Mockery::mock('Aschelch\Scenario\TriggerInterface');
-        $this->action = \Mockery::mock('Aschelch\Scenario\ActionInterface');
+        $this->trigger = \Mockery::mock(TriggerInterface::class);
+        $this->action = \Mockery::mock(ActionInterface::class);
     }
 
     public function testScenarioIsTriggered() {
