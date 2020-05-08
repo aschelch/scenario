@@ -2,9 +2,9 @@
 
 require '../vendor/autoload.php';
 
-use Aschelch\Scenario\Scenario;
-use Aschelch\Scenario\ScenarioRepositoryInterface;
-use Aschelch\Scenario\Processor;
+use PlumeSolution\Scenario\Scenario;
+use PlumeSolution\Scenario\ScenarioRepositoryInterface;
+use PlumeSolution\Scenario\Processor;
 
 class ScenarioRepository implements ScenarioRepositoryInterface{
 

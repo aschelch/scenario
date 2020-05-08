@@ -1,12 +1,12 @@
 <?php
 
-namespace Aschelch\Scenario\Tests;
+namespace PlumeSolution\Scenario\Tests;
 
-use Aschelch\Scenario\Processor;
-use Aschelch\Scenario\Scenario;
+use PlumeSolution\Scenario\Processor;
+use PlumeSolution\Scenario\Scenario;
 use \Mockery;
 use PHPUnit\Framework\TestCase;
-use Aschelch\Scenario\ScenarioRepositoryInterface;
+use PlumeSolution\Scenario\ScenarioRepositoryInterface;
 
 class ProcessorTest extends TestCase
 {

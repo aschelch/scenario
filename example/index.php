@@ -2,11 +2,11 @@
 
 require '../vendor/autoload.php';
 
-use Aschelch\Scenario\TriggerInterface;
-use Aschelch\Scenario\ActionInterface;
-use Aschelch\Scenario\Scenario;
-use Aschelch\Scenario\Processor;
-use Aschelch\Scenario\ScenarioRepositoryInterface;
+use PlumeSolution\Scenario\TriggerInterface;
+use PlumeSolution\Scenario\ActionInterface;
+use PlumeSolution\Scenario\Scenario;
+use PlumeSolution\Scenario\Processor;
+use PlumeSolution\Scenario\ScenarioRepositoryInterface;
 
 class AdminUserLoggedInTrigger implements TriggerInterface{
 
