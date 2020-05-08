@@ -1,11 +1,11 @@
 <?php
 
-namespace Aschelch\Scenario\Tests;
+namespace PlumeSolution\Scenario\Tests;
 
-use Aschelch\Scenario\Scenario;
+use PlumeSolution\Scenario\Scenario;
 use PHPUnit\Framework\TestCase;
-use Aschelch\Scenario\TriggerInterface;
-use Aschelch\Scenario\ActionInterface;
+use PlumeSolution\Scenario\TriggerInterface;
+use PlumeSolution\Scenario\ActionInterface;
 
 class ScenarioTest extends TestCase
 {
