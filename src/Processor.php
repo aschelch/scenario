@@ -4,7 +4,9 @@ namespace Aschelch\Scenario;
 
 class Processor
 {
-
+    /**
+     * @var ScenarioRepositoryInterface
+     */
     private $repository;
 
     public function __construct(ScenarioRepositoryInterface $repository)

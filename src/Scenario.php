@@ -4,6 +4,14 @@ namespace Aschelch\Scenario;
 
 class Scenario
 {
+    /**
+     * @var TriggerInterface
+     */
+    private $trigger;
+    /**
+     * @var ActionInterface
+     */
+    private $action;
 
     public function __construct(TriggerInterface $trigger, ActionInterface $action)
     {
